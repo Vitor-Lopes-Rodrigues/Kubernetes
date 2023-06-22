@@ -10,4 +10,5 @@ spec:
   selector:
     app:  primeiro-pod
 
-    /*Com o load balancer, você aponta o External-ip para o seu proprio o localhost type(LoadBalancer)*/
+    /*Com o load balancer, você aponta o External-ip para o seu proprio o localhost type(LoadBalancer), ou seja expoe para todo mundo do mundo(web)
+     E ele permite acesso a partir de fora do cluster.*/
