@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-pod-1-loadbalancer
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      nodePort: 32767 
+  selector:
+    app:  primeiro-pod
+
+    /*Com o load balancer, você aponta o External-ip para o seu proprio o localhost type(LoadBalancer)*/
